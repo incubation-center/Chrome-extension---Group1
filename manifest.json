@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "version": "1.0.0",
-  "name": "Gmeet Custom Chat",
-  "short_name": "gmeet-chat",
+  "name": "Google Meet Quick React",
+  "short_name": "gmeet-quick-chat",
   "description": "enhance user experience of gmeet-chat",
   "default_locale": "en",
 

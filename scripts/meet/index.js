@@ -39,7 +39,7 @@ request.onreadystatechange = function () {
                   let newItem = document.createElement("div");
                   let container = createContainer();
                   newItem.className = "open-chat"; // class to display default emoji button
-                  newItem.innerText = "😄";
+                  newItem.innerText = "👆";
                   box.insertBefore(newItem, box.childNodes[0]);
                   box.insertBefore(container, box.childNodes[0]);
 

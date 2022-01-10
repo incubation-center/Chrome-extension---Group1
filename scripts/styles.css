@@ -1,14 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Khmer&family=Poppins&display=swap");
 .emoji-container {
   flex-direction: row;
   height: 350px;
   width: 270px;
   border-radius: 2%;
-  background-color: #696969;
+  background-color: white;
   padding: 10px;
   flex-wrap: wrap;
   flex-basis: 100%;
   position: absolute;
   bottom: 70px;
+  /* width: 320px;
+  height: 370px; */
 }
 
 .emoticon-div {
@@ -24,11 +27,18 @@
 .grid {
   height: 30px;
   width: 30px;
+  /* height: 35px;
+  width: 35px; */
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   display: flex;
   font-size: 22px;
   cursor: pointer;
+}
+
+.grid:hover {
+  /* background-color: rgb(170, 169, 169); */
+  border-bottom: 4px solid blue;
 }
 
 #navbar {
@@ -36,17 +46,18 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #696969;
+  background-color: White;
   width: 100%;
   overflow: auto;
   border-radius: 5px;
+  border: 2px solid gray;
 }
 
 .em-nav {
   float: left;
   padding: 0px 10px;
   display: block;
-  color: white;
+  color: gray;
   text-align: center;
   margin: 5px 0px;
   text-decoration: none;
@@ -54,8 +65,28 @@
 }
 
 .em-nav:hover {
-  background-color: #111;
+  /* background-color: #111; */
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.em-nav::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease;
+}
+
+.em-nav:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .oIy2qc {
@@ -80,8 +111,12 @@
 .popup {
   height: 338px;
   width: 250px;
-
-  background-color: #f8f8ff;
+  font-family: "Khmer", cursive;
+  font-family: "Poppins", sans-serif;
+  /* height: 350px;
+  width: 300px; */
+  font-family: "Poppins", sans-serif;
+  background-color: white;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -91,6 +126,8 @@
 .emoji-container-popup {
   height: 350px;
   width: 270px;
+  /* width: 320px;
+  height: 370px; */
   padding: 10px;
   position: absolute;
 }
